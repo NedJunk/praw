@@ -258,7 +258,7 @@ comments as a flattened list you can call the :meth:`.list` method on a
 
 .. code-block:: python
 
-    # assume you have a praw.Reddit instance bound to variable `reddit`
+    # assume you have a Submission instance bound to variable `submission`
     top_level_comments = list(submission.comments)
     all_comments = submission.comments.list()
 
@@ -272,7 +272,7 @@ comments as a flattened list you can call the :meth:`.list` method on a
 
     .. code-block:: python
 
-        # assume you have a praw.Reddit instance bound to variable `reddit`
+        # assume you have a Submission instance bound to variable `submission`
         submission = reddit.submission("39zje0")
         submission.comment_sort = "new"
         top_level_comments = list(submission.comments)
